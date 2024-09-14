@@ -1,15 +1,12 @@
 import re
-import fitz  # PyMuPDF
+import fitz 
 from openai import OpenAI
 from flask import Flask, render_template, request, redirect, url_for
 import os
 from dotenv import load_dotenv
 load_dotenv()
-
-# Initialize Flask app
 app = Flask(__name__)
 
-# Set your OpenAI API Key here
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 UPLOAD_FOLDER = 'uploads'
@@ -103,7 +100,6 @@ def upload_file():
     </form>
     '''
 
-# Route to display resume
 @app.route('/resume/<filename>')
 def display_resume(filename):
     file_path = os.path.join('uploads', filename)
