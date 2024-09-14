@@ -23,3 +23,6 @@ Welcome to the LinkedIn Resume Extractor and Generator! This project allows you 
 - **`app.py`**: The Flask application that integrates with the OpenAI API to generate the HTML resume.
 - **`app1.py`**: An alternative Flask application using the Groq API for faster processing.
 
+## Best Feature:
+If you want to know the details of this project and behind the scenes you can interact with this project with Resume_Chat Assistant:
+[Resume_Chat👍](https://hf.co/chat/assistant/66e5e269885cb64cc6bcadc5 "Get Over to assistant✌️")
