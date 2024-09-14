@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ resume.name }}</h1>
+        <h2>{{ resume.headline }}</h2>
+
+        <div class="section">
+            <h3>Summary</h3>
+            <p>{{ resume.summary }}</p>
+        </div>
+
+        <div class="section">
+            <h3>Contact Information</h3>
+            <p>{{ resume.contact }}</p>
+        </div>
+
+        <div class="section">
+            <h3>Experience</h3>
+            <p>{{ resume.experience }}</p>
+        </div>
+
+        <div class="section">
+            <h3>Top Skills</h3>
+            <p>{{ resume.skills }}</p>
+        </div>
+
+        <div class="section">
+            <h3>Languages</h3>
+            <p>{{ resume.languages }}</p>
+        </div>
+
+        <div class="section">
+            <h3>Certifications</h3>
+            <p>{{ resume.certifications }}</p>
+        </div>
+
+        <div class="section">
+            <h3>Publications</h3>
+            <p>{{ resume.publications }}</p>
+        </div>
+    </div>
+</body>
+</html>
